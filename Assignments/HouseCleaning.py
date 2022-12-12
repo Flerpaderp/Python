@@ -20,7 +20,6 @@ class HouseCleaning:
         total = timeSpent + sqftCost + storyCost + supplies
         return total
 
-
 time = input("How many hours were spent cleaning?: ")
 sqft = input("How many sqft is your house?: ")
 stories = input("How many stories is the house?: ")
@@ -29,53 +28,9 @@ discount = input("Are you a member of the armed services? Y or N: ")
 clean = HouseCleaning(time, sqft, stories)
 cleanTotal = clean.findCost(time, sqft, stories)
 
-if discount == "Y":
+if discount == "Y" or "y" or "yes" or "Yes":
     newCleanTotal = cleanTotal - 75
 else:
     newCleanTotal = cleanTotal
 
-
 print("Your total today is", newCleanTotal, "$")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Kosta = Person ('Kosta', 35, 350, 72, 10)
-#Liv = Person ('Liv', 33, 170, 60, 60)
-#Donald = Person ('Donald', 14, 120, 62, 35)
-#Nancy = Person ('Nancy', 17, 110, 67, 90)
-#Max = Person ('Max', 14, 90, 59, 80)
-
-
-
-
-
-
-
-
-
-
-#persons = [livPerson, kostaPerson, donaldPerson]
-
-#for p in persons:
-#    print (p.Owner, "is a very cool Person")
